@@ -1,34 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="first-section">
+        <nav className="nav-bar">
+          <img src="/src/images/ironhack-logo-xs.png" className="logo" />
+          <img src="/src/images/menu-top-xs.png" className="settings" />
+        </nav>
+        <h1>Say hello to ReactJS</h1>
+        <article>
+          You will learn how to use <br></br>the most popular frontend library,{" "}
+          <br></br>and become a super Ninja developer.
+        </article>
+        <button>Awesome!</button>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="second-section">
+        <section className="section">
+          <img src="/src/images/icon1.png" />
+          <h2>Declarative</h2>
+          <p>React makes it painless to create interactive UIs.</p>
+        </section>
+        <section className="section">
+          <img src="/src/images/icon2.png" />
+          <h2>Components</h2>
+          <p>Build encapsulated components that manage their state.</p>
+        </section>
+        <section className="section">
+          <img src="/src/images/icon3.png" />
+          <h2>Single-Way</h2>
+          <p>A set of immutable values are passed to the components.</p>
+        </section>
+        <section className="section">
+          <img src="/src/images/icon4.png" />
+          <h2>JSX</h2>
+          <p>Statically-typed, designed to run on modern browsers.</p>
+        </section>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
