@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #1f2535;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,11 +25,11 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  margin: 0px;
+  /* min-width: 320px; */
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -40,7 +40,7 @@ h1 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 1.5em 3em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
