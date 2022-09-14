@@ -1,34 +1,101 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div
+        style={{
+          backgroundColor: "#1f2535",
+          height: 500,
+          width: 700,
+          paddingLeft: 50,
+          paddingRight: 50,
+          paddingTop: 10,
+        }}
+      >
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <div>
+            <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/landing-page/ironhack-logo-xs.png" />
+          </div>
+          <div>
+            <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/landing-page/menu-top-xs.png" />
+          </div>
+        </div>
+        <div
+          style={{
+            width: 300,
+            display: "flex",
+            flexDirection: "column",
+            textAlign: "left",
+          }}
+        >
+          <h1 style={{ color: "white", margin: 0, marginTop: 75 }}>
+            Say hello to ReactJS
+          </h1>
+          <p className="paragraph" style={{ color: "white", marginBottom: 50 }}>
+            You will learn how to use <br /> the most popular frontend library,{" "}
+            <br />
+            and become a super Ninja developer.
+          </p>
+          <button
+            style={{
+              width: 120,
+              height: 50,
+              textAlign: "center",
+              borderRadius: 3,
+            }}
+          >
+            Awesome!
+          </button>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div
+        style={{
+          marginTop: 75,
+          width: 700,
+          display: "flex",
+          alignContent: "space-around",
+        }}
+      >
+        <div style={{ margin: 10 }}>
+          <img
+            style={{ height: 150 }}
+            src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/landing-page/icon1.png"
+          ></img>
+          <p style={{ textAlign: "left", color: "#959595" }}>
+            React makes it painless to create interactive UIs.
+          </p>
+        </div>
+        <div style={{ margin: 10, color: "#959595" }}>
+          <img
+            style={{ height: 150 }}
+            src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/landing-page/icon2.png"
+          ></img>
+          <p style={{ textAlign: "left" }}>
+            Build encapsulated components that manage their state.
+          </p>
+        </div>
+        <div style={{ margin: 10, color: "#959595" }}>
+          <img
+            style={{ height: 150 }}
+            src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/landing-page/icon3.png"
+          ></img>
+          <p style={{ textAlign: "left" }}>
+            A set of immutable values ate passed to the components.
+          </p>
+        </div>
+        <div style={{ margin: 10, color: "#959595" }}>
+          <img
+            style={{ height: 150 }}
+            src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/landing-page/icon4.png"
+          ></img>
+          <p style={{ textAlign: "left" }}>
+            Statically-typed, designed to run on modern browsers.
+          </p>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
