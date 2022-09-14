@@ -2,7 +2,12 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="nav">
+    <nav
+      className="nav"
+      style={{
+        margin: 50,
+      }}
+    >
       <ul
         className="nav-menu"
         style={{
@@ -24,7 +29,6 @@ const Navbar = () => {
           <img
             src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/landing-page/menu-top-xs.png"
             alt="hamburger-menu"
-            style={{}}
           />
         </li>
       </ul>

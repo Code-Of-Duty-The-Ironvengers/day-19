@@ -20,7 +20,7 @@ const Herotxt = () => {
         </p>
         <button
           style={{
-            backgroundColor: "white",
+            backgroundColor: "#fff",
             color: "black",
           }}
         >
