@@ -6,18 +6,42 @@ import "./index.css";
 function App() {
   return (
     <div className="App">
-      <header className="background" id="root">
-        <nav style={{ display: "flex", alignItems: "space-evenly" }}>
-          <img className="logo" src="/src/images/ironhack-logo-xs.png" />
-          <img className="logo" src="/src/images/menu-top-xs.png" />
-        </nav>
-      </header>
-      <div>
-        <h1>Say Hello to ReactJS</h1>
-        <p>
-          You will learn how to use the most popular frontend library and become
-          a super ninja developer
-        </p>
+      <div
+        style={{
+          background: "#1F2434",
+          color: "white",
+          paddingBottom: "150px",
+        }}
+      >
+        <header className="background" id="root">
+          <nav
+            style={{
+              display: "flex",
+              alignItems: "space-evenly",
+              paddingLeft: "50px",
+              paddingRight: "50px",
+            }}
+          >
+            <img className="logo" src="/src/images/ironhack-logo-xs.png" />
+            <img
+              className="logo"
+              src="/src/images/menu-top-xs.png"
+              style={{ height: 20 }}
+            />
+          </nav>
+        </header>
+        <div>
+          <h1 style={{ width: "300px", paddingLeft: "80px" }}>
+            Say Hello to ReactJS
+          </h1>
+          <p style={{ width: "300px", paddingLeft: "80px" }}>
+            You will learn how to use the most popular frontend library and
+            become a super ninja developer
+          </p>
+          <button className="button" href="">
+            Awesome!
+          </button>
+        </div>
       </div>
       <div className="card">
         <div>
