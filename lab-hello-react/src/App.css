@@ -39,3 +39,35 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Header */
+.header {
+  color: white;
+  height: 580px;
+  padding: 6rem;
+}
+
+.header-title {
+  display: flex;
+  text-align: left;
+  font-size: 4.5rem;
+  font-weight: bold;
+  width: 450px;
+  margin-bottom: 1rem;
+}
+
+.header-text {
+  display: flex;
+  text-align: left;
+  font-size: 1.1rem;
+  width: 300px;
+  margin-bottom: 3rem;
+}
+
+.header-btn {
+  display: flex;
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1rem 1.6rem;
+}
