@@ -1,8 +1,13 @@
+/* GLOBAL STYLES */
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+.ul {
+  padding: 0;
 }
 
 .logo {
@@ -38,4 +43,135 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+/* MAIN WRAPPER */
+.app {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+}
+.container-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #191e2b;
+  padding-top: 1em;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+
+/* NAVBAR */
+
+.nav-section {
+  padding-bottom: 0.5em;
+}
+
+.nav-bar-wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+/* HELLO REACT */
+
+.hello-react{
+  display:flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.hello-react-section {
+  padding-bottom: 5.5em;
+  align-self: flex-start;
+}
+
+.hello-react-title{
+  display: flex;
+  padding: 0;
+  margin: 28px 0;
+  font-size: 4em;
+  color: white;
+  align-self: flex-start;
+  justify-content: flex-start;
+  line-height: 0.05em
+}
+.hello-react-description-text{
+  display: flex;
+  font-weight: 100;
+  color: white;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+
+/* BUTTON PADDING*/
+.button-wrapper{
+  padding-bottom: 3.5em;
+align-items:flex-start;
+display: flex;
+margin-top: 40px;
+}
+
+/* TOOLBOX SECTION */
+
+.container-tools{
+  margin-top: 7em;
+  padding-left: 4em;
+  padding-right: 4em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tool-box-wrapper ul {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+  list-style-type: none;
+  align-self: flex-start;
+}
+
+.nav-bar-wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-inline-start: 64px;
+  padding: 0;
+  margin-bottom: 100px;
+}
+
+.tool-box-li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.tool-box-li > h3 {
+  margin-bottom: 3px;
+  padding-left: 12px;
+}
+
+.tools-element-description{
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin-top: 3px;
+  padding-left: 12px  
+}
+
+.ironhack-logo{
+align-self: flex-start;
+}
+
+.menu-top{
+  align-self: flex-end;
+}
+
+.toolbox-images{
+  height: auto;
+  max-width: 55%;
 }
