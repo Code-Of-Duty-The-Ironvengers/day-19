@@ -1,34 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
+import Navbar from "./nav";
+import Description from "./info";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
-}
+      <Navbar />
+      <h1
+        style={{
+          marginTop: "8rem",
+          fontWeight: "900",
+          fontSize: "4rem",
+          letterSpacing: "-2px",
+        }}
+      >
+        Say hello to <br />
+        ReactJS
+      </h1>
+      <span className="paragraph">
+        <p>You will learn how to use</p>
+        <p>the most popular frontend library,</p>
+        <p>and become a super ninja developer.</p>
+      </span>
 
-export default App
+      <button
+        style={{
+          backgroundcolor: "grey",
+          cursor: "pointer",
+          textAlign: "center",
+          textDecoration: "none",
+          marginTop: "2rem",
+          marginBottom: "12rem",
+          padding: "1rem",
+        }}
+      >
+        Awesome!
+      </button>
+
+      <Description />
+    </div>
+  );
+}
+export default App;

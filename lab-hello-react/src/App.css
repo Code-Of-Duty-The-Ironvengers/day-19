@@ -2,7 +2,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+
 }
 
 .logo {
@@ -38,4 +38,37 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.box {
+  width: 200px;
+}
+
+.box h2 {
+  color: grey
+}
+
+.box p {
+  color: grey;
+}
+
+.nav {
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+
+.paragraph {
+
+  line-height: 0.5rem;
+
 }
